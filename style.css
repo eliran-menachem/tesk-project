@@ -1,0 +1,60 @@
+body{
+    box-sizing: border-box; 
+}
+img{
+    max-width: 100%;
+}
+
+.container{
+    background-image: url(tile.jpg);
+    min-height: 800px;
+
+}
+.col-md-12 img{
+    display: block;
+    margin: 20px auto;  
+}
+
+textarea{
+    background-image: url(formbg.jpg);
+    padding: 0px 80px;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bolder;  
+}
+.card{
+position: static;
+overflow: auto;
+background: url(notebg.png);
+background-repeat: no-repeat;
+background-size: cover;
+height: 300px;
+z-index: 50;
+
+opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.3s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.card-title{
+    position: relative;
+    bottom: -65px;
+}
+
+.close_btn {
+    position: absolute;
+    margin-top: -275px;
+    margin-left: 180px;
+    opacity: 0.6;
+    
+}
+
